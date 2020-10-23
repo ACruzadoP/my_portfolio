@@ -1,13 +1,20 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div>
-      <header>
-        <h1>HOLA MUNDO</h1>
-      </header>
-    </div>
-  );
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+
+class App extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Header />
+        <Main />
+        <Footer />
+      </React.Fragment>
+    )
+  }
 }
 
 export default App;

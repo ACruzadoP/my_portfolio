@@ -56,6 +56,20 @@ nav {
     transition: all 0.3s ease;
 }
 
+.lorem{
+    opacity: 0;
+}
+
+.about{
+    margin-left: 19%;
+    margin-right: 19%;
+    font-size: 40px;
+    margin-top: 9%;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    color: rgb(107, 101, 101);
+}
+
 footer {
     background: #24292e;
     width: 100%;
@@ -67,7 +81,6 @@ footer {
     ". segunda tercera" 
     ". primera tercera";
     position: absolute;
-    top: 105vh;
 }
 
 .box1 {
@@ -108,7 +121,7 @@ footer i:hover {
         width: 40%;
     }
     footer{
-        grid-template-columns: 25% 40% 1fr;
+        grid-template-columns: 20% 40% 1fr;
     }
 }
 
@@ -139,7 +152,7 @@ footer i:hover {
         display: block;
     }
     footer {
-        grid-template-columns: 30% 30% 1fr;
+        grid-template-columns: 20% 40% 1fr;
         grid-template-areas: 
         "primera segunda tercera";
     }

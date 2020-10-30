@@ -1,12 +1,17 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-nav{
+body {
+    background-image: url("/img/bg.png");
+}
+
+
+nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 15vh;
     font-family: 'Staatliches', cursive;
@@ -14,14 +19,28 @@ nav{
     font-size: 22px;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 20%;
+.slogo {
+    width: 18%;
 }
 
-.nav-links li{
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.nav-links li {
     list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    text-decoration-line: underline;
+    color: rgb(70, 44, 44);
 }
 
 .burger {
@@ -29,69 +48,151 @@ nav{
     cursor: pointer;
 }
 
-.burger div{
+.burger div {
     width: 25px;
     height: 3px;
-    background-color: grey;
+    background-color: black;
     margin: 5px;
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 30%;
+footer {
+    background: #24292e;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 20% 40% 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". segunda tercera" 
+    ". primera tercera";
+    position: absolute;
+    top: 105vh;
+}
+
+.box1 {
+    grid-area: primera;
+}
+
+.box2 {
+    grid-area: segunda;
+}
+
+.box3 {
+    grid-area: tercera;
+}
+
+footer ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+footer i {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+footer i:hover {
+    color: rgb(206, 201, 201);
+}
+
+@media screen and (max-width:1250px) {
+    .slogo {
+        width: 26%;
+    }
+    .nav-links {
+        width: 40%;
+    }
+    footer{
+        grid-template-columns: 25% 40% 1fr;
     }
 }
 
-@media screen and (max-width:768px){
-
-    body{
+@media screen and (max-width:800px) {
+    body {
         overflow-x: hidden;
     }
-    .nav-links{
+    .slogo {
+        width: 30%;
+    }
+    .nav-links {
         position: absolute;
+        top: 20vh;
         right: 0px;
-        height: 25vh;
-        top: 15vh;
-        background-color: grey;
+        border-radius: 15px;
+        width: 40%;
+        height: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 40%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-out;
     }
-    .nav-links li{
+    .nav-links li {
         opacity: 0;
     }
-
     .burger {
         display: block;
+    }
+    footer {
+        grid-template-columns: 30% 30% 1fr;
+        grid-template-areas: 
+        "primera segunda tercera";
+    }
+}
+
+@media screen and (max-height:900px) {
+    
+    footer {
+        height: 100px;
+        grid-template-rows: 80% 1fr;
+    }
+    footer i {
+        font-size: 20px;
     }
 
 }
 
-@keyframes navLinkFade{
-    from{
+@media screen and (max-height:500px) {
+    .nav-links{
+        height: 40%;
+    }
+}
+
+@media screen and (max-height:400px) {
+    footer i {
+        font-size: 15px;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.nav-active{
-    transform: translateX(0%);
+.toggle_nav {
+    transform: translateX(-10%);
+    background: white;
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+.toggle_burger .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+
+.toggle_burger .line2 {
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+
+.toggle_burger .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }

@@ -6,9 +6,7 @@ class Footer extends React.Component {
         return (
             <React.Fragment>
                 <footer>
-                    <div className="box1"></div>
-                    <div className="box2"><Social /></div>
-                    <div className="box3"></div>
+                    <div className="testing" style={{gridArea: "fsecond"}}><Social /></div>
                 </footer>
             </React.Fragment>
         )

@@ -5,31 +5,39 @@
 }
 
 body {
-    background-image: url("/img/bg.png");
+    background-image: linear-gradient(#F8B195, #C06C84);
+    overflow-x: hidden;
 }
 
-
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-left: 19%;
+    margin-right: 19%;
     min-height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hfirst hsecond";
     font-family: 'Staatliches', cursive;
     letter-spacing: 3px;
     font-size: 22px;
+    align-items: center;
+}
+
+.headerbox1 {
+    grid-area: hfirst;
+}
+
+.headerbox2 {
+    grid-area: hsecond;
 }
 
 .slogo {
-    width: 18%;
+    width: 60%;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-evenly;
-    width: 30%;
-}
-
-.nav-links li {
+    justify-content: space-around;
+    width: 100%;
     list-style: none;
 }
 
@@ -40,7 +48,7 @@ nav {
 
 .nav-links a:hover {
     text-decoration-line: underline;
-    color: rgb(70, 44, 44);
+    color: rgb(88, 114, 32);
 }
 
 .burger {
@@ -56,88 +64,114 @@ nav {
     transition: all 0.3s ease;
 }
 
-.lorem{
+.lorem {
     opacity: 0;
 }
 
-.about{
+.aboutmask {
     margin-left: 19%;
     margin-right: 19%;
-    font-size: 40px;
-    margin-top: 9%;
-    font-family: 'Lobster', cursive;
-    font-weight: normal;
-    color: rgb(107, 101, 101);
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 35px;
+    font-family: 'Lateef', cursive;
+    color: rgb(65, 61, 61);
+    border-radius: 15px;
+}
+
+.aboutmask img {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    width: 25%;
+}
+
+.abouttext {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer {
     background: #24292e;
     width: 100%;
-    height: 200px;
+    height: 150px;
     display: grid;
-    grid-template-columns: 20% 40% 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 6% 1fr;
+    grid-template-rows: 10% 1fr 1fr;
     grid-template-areas: 
-    ". segunda tercera" 
-    ". primera tercera";
-    position: absolute;
-}
-
-.box1 {
-    grid-area: primera;
-}
-
-.box2 {
-    grid-area: segunda;
-}
-
-.box3 {
-    grid-area: tercera;
+    ". . ." 
+    ". fsecond ."
+    ". . .";
 }
 
 footer ul {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
     list-style-type: none;
 }
 
 footer i {
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 footer i:hover {
     color: rgb(206, 201, 201);
 }
 
-@media screen and (max-width:1250px) {
-    .slogo {
-        width: 26%;
+/*
+    WIDTH
+*/
+
+@media screen and (max-width:1400px) {
+    .aboutmask img {
+        width: 35%;
     }
-    .nav-links {
-        width: 40%;
+    .aboutmask {
+        font-size: 30px;
     }
-    footer{
-        grid-template-columns: 20% 40% 1fr;
+    footer {
+        grid-template-columns: 20% 8% 1fr;
     }
 }
 
-@media screen and (max-width:800px) {
-    body {
-        overflow-x: hidden;
+@media screen and (max-width:1250px) {
+    .slogo {
+        width: 80%;
+    }
+    footer {
+        grid-template-columns: 20% 10% 1fr;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .aboutmask img {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        grid-template-columns: 1fr 10%;
     }
     .slogo {
-        width: 30%;
+        width: 65%;
     }
     .nav-links {
         position: absolute;
         top: 20vh;
         right: 0px;
         border-radius: 15px;
-        width: 40%;
+        width: 28%;
         height: 20%;
         display: flex;
         flex-direction: column;
@@ -152,14 +186,24 @@ footer i:hover {
         display: block;
     }
     footer {
-        grid-template-columns: 20% 40% 1fr;
-        grid-template-areas: 
-        "primera segunda tercera";
+        grid-template-columns: 20% 13% 1fr;
     }
 }
 
+@media screen and (max-width:600px) {
+    .aboutmask {
+        font-size: 25px;
+    }
+    footer {
+        grid-template-columns: 20% 16% 1fr;
+    }
+}
+
+/*
+    HEIGHT
+*/
+
 @media screen and (max-height:900px) {
-    
     footer {
         height: 100px;
         grid-template-rows: 80% 1fr;
@@ -167,12 +211,12 @@ footer i:hover {
     footer i {
         font-size: 20px;
     }
-
 }
 
 @media screen and (max-height:500px) {
-    .nav-links{
+    .nav-links {
         height: 40%;
+        top: 30vh;
     }
 }
 
@@ -181,6 +225,10 @@ footer i:hover {
         font-size: 15px;
     }
 }
+
+/*
+    NAV LINKS WHEN THE BURGER GETS HIT
+*/
 
 @keyframes navLinkFade {
     from {
@@ -192,6 +240,10 @@ footer i:hover {
         transform: translateX(0px);
     }
 }
+
+/*
+    TOGGLES
+*/
 
 .toggle_nav {
     transform: translateX(-10%);

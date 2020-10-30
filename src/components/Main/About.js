@@ -6,7 +6,7 @@ class About extends React.Component {
             <React.Fragment>
                 <div>
                     <div className="aboutmask">
-                        <img src="/img/acp.png"></img>
+                        <img src="/img/acp.png" alt="me"></img>
                         <div className="abouttext">
                             <p>
                                 Hello there! My name is Alberto and technically, I am a Technician in Computer Applications Development.

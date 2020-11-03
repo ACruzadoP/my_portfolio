@@ -1,6 +1,8 @@
 import React from "react"
 import Social from "./Social"
 
+import './Footer.css';
+
 class Footer extends React.Component {
     render() {
         return (

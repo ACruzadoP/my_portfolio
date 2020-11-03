@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from 'react-router-dom';
 
+import './Navbar.css';
+
 class Navbar extends React.Component {
     render() {
         function burgerlistener() {
@@ -23,13 +25,13 @@ class Navbar extends React.Component {
         return (
             <React.Fragment>
                 <nav>
-                    <div className="headerbox1">
-                        <img className="slogo" src="/img/logo.png" alt="logo" />
+                    <div style={{gridArea: "hfirst"}}>
+                        <img className="slogo" src="/img/logo.png" alt="logo" style={{width: "60%"}}/>
                     </div>
-                    <div className="headerbox2">
+                    <div style={{gridArea: "hsecond"}}>
                         <ul className="nav-links" id="special-nav">
                             <li><Link to="/"><span>HOME</span></Link></li>
-                            <li><Link to="/portfolio"><span>PORTFOLIO</span></Link></li>
+                            <li><Link to="/works"><span>WORKS</span></Link></li>
                             <li><Link to="/about"><span>ABOUT</span></Link></li>
                         </ul>
                         <div className="burger" onClick={burgerlistener} id="special-burger">

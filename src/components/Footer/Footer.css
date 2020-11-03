@@ -1,0 +1,58 @@
+footer {
+    background: #24292e;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 20% 10% 1fr;
+    grid-template-rows: 10% 1fr 1fr;
+    grid-template-areas: 
+    ". . ." 
+    ". fsecond ."
+    ". . .";
+}
+
+footer ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer i {
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+footer i:hover {
+    color: rgb(206, 201, 201);
+}
+
+
+/*
+    WIDTH
+*/
+
+@media screen and (max-width:1400px) {
+    footer {
+        grid-template-columns: 20% 14% 1fr;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    footer {
+        grid-template-columns: 20% 16% 1fr;
+    }
+}
+
+@media screen and (max-width:900px) {
+    footer {
+        grid-template-columns: 20% 20% 1fr;
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer {
+        grid-template-columns: 20% 26% 1fr;
+    }
+}

@@ -11,6 +11,11 @@ class Social extends React.Component {
                         </a>
                     </li>
                     <li>
+                        <a href="https://www.linkedin.com/in/albertocruzado/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://github.com/ACruzadoP?tab=projects" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github-square"></i>
                         </a>

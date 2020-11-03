@@ -1,0 +1,68 @@
+[
+    {
+        "id": "1",
+        "url": "/img/c.png",
+        "alt": "c",
+        "cn": "techimg"
+    },
+    {
+        "id": "2",
+        "url": "/img/csharp.png",
+        "alt": "csharp",
+        "cn": "techimg"
+    },
+    {
+        "id": "3",
+        "url": "/img/vb.png",
+        "alt": "vb",
+        "cn": "techimg"
+    },
+    {
+        "id": "4",
+        "url": "/img/java.png",
+        "alt": "java",
+        "cn": "techimg"
+    },
+    {
+        "id": "5",
+        "url": "/img/l2net.png",
+        "alt": "l2net",
+        "cn": "techimg2"
+    },
+    {
+        "id": "6",
+        "url": "/img/js.png",
+        "alt": "js",
+        "cn": "techimg"
+    },
+    {
+        "id": "7",
+        "url": "/img/react.png",
+        "alt": "react",
+        "cn": "techimg"
+    },
+    {
+        "id": "8",
+        "url": "/img/git.png",
+        "alt": "git",
+        "cn": "techimg"
+    },
+    {
+        "id": "9",
+        "url": "/img/html.png",
+        "alt": "html",
+        "cn": "techimg"
+    },
+    {
+        "id": "10",
+        "url": "/img/css.png",
+        "alt": "css",
+        "cn": "techimg"
+    },
+    {
+        "id": "11",
+        "url": "/img/sass.png",
+        "alt": "sass",
+        "cn": "techimg"
+    }
+]

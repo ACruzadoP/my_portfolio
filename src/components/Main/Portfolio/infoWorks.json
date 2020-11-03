@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "phaseName": "PHASE I",
+        "dates": "2006-2010",
+        "text": "1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto quisquam alias temporibus blanditiis exercitationem."
+    },
+    {
+        "id": "2",
+        "phaseName": "PHASE II",
+        "dates": "2011-2012",
+        "text": "2Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto quisquam alias temporibus blanditiis exercitationem."
+    },
+    {
+        "id": "3",
+        "phaseName": "PHASE III",
+        "dates": "2014-2015",
+        "text": "3Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto quisquam alias temporibus blanditiis exercitationem."
+    },
+    {
+        "id": "4",
+        "phaseName": "PHASE IV",
+        "dates": "2016-2018",
+        "text": "4Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto quisquam alias temporibus blanditiis exercitationem."
+    },
+    {
+        "id": "5",
+        "phaseName": "PHASE V",
+        "dates": "2019-2020",
+        "text": "5Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto quisquam alias temporibus blanditiis exercitationem."
+    }
+]

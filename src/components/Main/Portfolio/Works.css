@@ -8,7 +8,7 @@
     border-radius: 15px;
     display: grid;
     grid-template-columns: 15% 1fr;
-    grid-template-rows: 1fr 0fr;
+    grid-template-rows: auto auto;
 }
 
 .gridbox1 {
@@ -144,6 +144,22 @@
         grid-row: 2/3;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .gridbox2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .info1 {
+        font-size: 15px;
+    }
+    
+    .info2 {
+        font-size: 10px;
     }
 }
 

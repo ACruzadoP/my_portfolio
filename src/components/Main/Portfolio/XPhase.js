@@ -26,6 +26,18 @@ function XPhase (props) {
         if (lbtext[i].includes('L2NET_LINK')){
             lbtext[i] = lbtext[i].replace('L2NET_LINK','');
             lbtext[i] = <span>{lbtext[i]} <a href="https://github.com/users/ACruzadoP/projects/3" target="_blank" rel="noopener noreferrer">here</a></span>
+        } else if (lbtext[i].includes('IEC_LINK')){
+            lbtext[i] = lbtext[i].replace('IEC_LINK','');
+            lbtext[i] = <span>{lbtext[i]} <a href="https://www.cic.gc.ca/english/work/iec/eligibility.asp" target="_blank" rel="noopener noreferrer">here</a></span>
+        } else if (lbtext[i].includes('LQA_LINK')){
+            lbtext[i] = lbtext[i].replace('LQA_LINK','');
+            lbtext[i] = <span>{lbtext[i]} <a href="https://github.com/ACruzadoP/LQA_var_num_checker" target="_blank" rel="noopener noreferrer">here</a></span>
+        } else if (lbtext[i].includes('RB_LINK')){
+            lbtext[i] = lbtext[i].replace('RB_LINK','');
+            lbtext[i] = <span>{lbtext[i]} <a href="https://github.com/ACruzadoP/reply_builder" target="_blank" rel="noopener noreferrer">here</a></span>
+        } else if (lbtext[i].includes('GS_LINK')){
+            lbtext[i] = lbtext[i].replace('GS_LINK','');
+            lbtext[i] = <span>{lbtext[i]} <a href="https://github.com/users/ACruzadoP/projects/4" target="_blank" rel="noopener noreferrer">here</a></span>
         }
 
         lbtextf = <span> {lbtextf} {lbtext[i]} <br /><br /></span>;

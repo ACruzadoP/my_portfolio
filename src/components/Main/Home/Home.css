@@ -1,0 +1,84 @@
+
+.carousel-container{
+  margin: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 8%;
+  margin-bottom: 20%;
+  color: rgb(65, 61, 61);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.carousel-slide{
+  display: flex;
+}
+
+.quote{
+  display: grid;
+  grid-template-rows: auto auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.saying{
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.comillas{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 25px;
+  margin-right: 40%;
+  margin-left: 40%;
+  font-size: 25px;
+  color: rgb(122, 117, 117);
+}
+
+.refran{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.author{
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 2%;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+
+#prevBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}

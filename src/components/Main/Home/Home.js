@@ -25,7 +25,7 @@ function nextBtn() {
 
 
 const resizeListener = async () => {
-    if ((window).height() === height){
+    if (window.height() === height){
         carouselContainer.style.opacity = 0;
         await delay(1500);
         window.location.reload();

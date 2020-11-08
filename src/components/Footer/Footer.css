@@ -48,6 +48,6 @@ footer i:hover {
 }
 @media screen and (max-width:600px) {
     footer {
-        grid-template-columns: 20% 26% 1fr 20%;
+        grid-template-columns: 20% 30% 1fr 20%;
     }
 }

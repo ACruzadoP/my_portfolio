@@ -3,14 +3,12 @@
     margin-right: 19%;
     margin-top: 2%;
     background: rgba(255, 255, 255, 0.2);
-    font-family: 'Saira Stencil One', cursive;
     color: rgb(65, 61, 61);
     border-radius: 15px;
     display: grid;
     grid-template-columns: 15% 1fr;
     grid-template-rows: auto auto;
 }
-
 .gridbox1 {
     margin-left: 5px;
     margin-bottom: 5px;
@@ -23,24 +21,20 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: 'Saira Stencil One', cursive;
 }
-
 .gridbox1:hover {
     background: rgba(88, 114, 32, 0.2);
 }
-
 .info1 {
     font-size: 30px;
 }
-
 .info2 {
     font-size: 15px;
 }
-
 .gridbox2 {
     grid-column: 2/3;
 }
-
 .info3 {
     display: flex;
     justify-content: center;
@@ -50,23 +44,16 @@
     border-left: 1px solid rgb(36, 34, 34);
     flex-wrap: wrap;
 }
-
-.techimg {
-    width: 80px;
-}
-
-.techimg2 {
-    width: 200px;
-}
-
 .gridbox3 {
     display: none;
     grid-column: 1/3;
     background: rgba(255, 255, 255, 0.5);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.2px;
 }
-
 .info4 {
     display: none;
     margin-top: 10px;
@@ -74,11 +61,6 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-
-/*
-    WIDTH
-*/
-
 @media screen and (max-width:1540px) {
     .portfoliomask {
         margin-top: 4%;
@@ -87,7 +69,6 @@
         font-size: 25px;
     }
 }
-
 @media screen and (max-width:1300px) {
     .portfoliomask {
         margin-top: 5%;
@@ -96,7 +77,6 @@
         font-size: 20px;
     }
 }
-
 @media screen and (max-width:1100px) {
     .portfoliomask {
         grid-template-columns: 1fr;
@@ -128,17 +108,14 @@
         flex-direction: column;
         align-items: center;
     }
-
     .gridbox2 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-
     .info3 {
         border-top: 1px solid rgb(36, 34, 34);
         border-left: none;
     }
-
     .gridbox3 {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -146,39 +123,29 @@
         border-bottom-right-radius: 0px;
     }
 }
-
 @media screen and (max-width:365px) {
     .gridbox2{
         display: none;
     }
 }
-
 @media screen and (max-width:280px) {
     .info1 {
         font-size: 15px;
     }
-    
     .info2 {
         font-size: 10px;
     }
 }
-
-/*
-    TOGGLES
-*/
-
 .toggle_gridbox {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .toggle_info {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .toggle_info{
     border-top: none;
 }

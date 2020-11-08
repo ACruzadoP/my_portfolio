@@ -1,58 +1,75 @@
 import React from "react"
 import "./Home.css"
+import '../../Header/Navbar.css'
 
+const delay = ms => new Promise(res => setTimeout(res, ms));
+var carouselContainer;
 var carouselSlide;
-var carouselimages;
+var carouselImages;
 var counter = 1;
+var linkHome;
 var size;
-
 function prevBtn() {
     if(counter <= 0) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    carouselSlide.style.transition = "transform 0.6s ease-in-out";
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 };
-
 function nextBtn() {
-    if(counter>=carouselimages.length-1) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    if(counter>=carouselImages.length-1) return;
+    carouselSlide.style.transition = "transform 0.6s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 };
-
-
-
+const resizeListener = async () => {
+    carouselContainer.style.opacity = 0;
+    await delay(1500);
+    window.location.reload();
+};
 class Home extends React.Component {
 
     componentDidMount() {
+        carouselContainer = document.getElementById("crc");
         carouselSlide = document.getElementById("cr");
-        carouselimages = document.getElementsByClassName("quote");
-        size = carouselimages[0].clientWidth;
-
+        carouselImages = document.getElementsByClassName("quote");
+        size = carouselImages[0].clientWidth;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
         carouselSlide.addEventListener('transitionend', () => {
-            if(carouselimages[counter].id === 'lastClone'){
+            if(carouselImages[counter].id === 'lastClone'){
                 carouselSlide.style.transition = "none";
-                counter = carouselimages.length-2;
+                counter = carouselImages.length-2;
                 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
             }
-            if(carouselimages[counter].id === 'firstClone'){
+            if(carouselImages[counter].id === 'firstClone'){
                 carouselSlide.style.transition = "none";
-                counter = carouselimages.length-counter;
+                counter = carouselImages.length-counter;
                 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
             }
         });
-    }
+        window.addEventListener("resize", resizeListener);
+        linkHome = document.getElementsByClassName("linkhome");
+        linkHome[0].classList.toggle("toggle_home");
 
+        let nav = document.getElementById('special-nav');
+        let ht = window.getComputedStyle(nav, null).getPropertyValue("background");
+        
+        if (ht === 'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box'){
+            carouselContainer.classList.toggle("toggle_increase_top_margin");
+        } 
+    }
+    componentWillUnmount() {
+        
+        window.removeEventListener("resize", resizeListener);
+        linkHome[0].classList.toggle("toggle_home");
+
+    }
     render() {
         return (
-            <div>
-                <div className="carousel-container">
+            <React.Fragment>
+                <div className="carousel-container" id="crc">
                     <i className="fas fa-arrow-left" id="prevBtn" onClick={prevBtn}></i>
                     <i className="fas fa-arrow-right" id="nextBtn" onClick={nextBtn}></i>
                     <div className="carousel-slide" id="cr">
-
                         <div className="quote" id="lastClone">
                             <div className="saying">
                                 <div className="comillas">
@@ -62,7 +79,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Albert Einstein</p>
                         </div>
-
                         <div className="quote">
                             <div className="saying">
                                 <div className="comillas">
@@ -72,7 +88,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Isaac Newton</p>
                         </div>
-
                         <div className="quote">
                             <div className="saying">
                                 <div className="comillas">
@@ -82,7 +97,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Chinese proverb</p>
                         </div>
-
                         <div className="quote">
                             <div className="saying">
                                 <div className="comillas">
@@ -92,7 +106,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Anne Frank</p>
                         </div>
-
                         <div className="quote">
                             <div className="saying">
                                 <div className="comillas">
@@ -102,17 +115,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Abraham Lincoln</p>
                         </div>
-
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">Man often becomes what he believes himself to be. If I keep on saying to myself that I cannot do a certain thing, it is possible that I may end by really becoming incapable of doing it. On the contrary, if I have the belief that I can do it, I shall surely acquire the capacity to do it even if I may not have it at the beginning.</p>
-                            </div>
-                            <p className="author">Mahatma Gandhi</p>
-                        </div>
-
                         <div className="quote">
                             <div className="saying">
                                 <div className="comillas">
@@ -122,7 +124,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Sigmund Freud</p>
                         </div>
-
                         <div className="quote">
                             <div className="saying">
                                 <div className="comillas">
@@ -132,7 +133,6 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Albert Einstein</p>
                         </div>
-
                         <div className="quote" id="firstClone">
                             <div className="saying">
                                 <div className="comillas">
@@ -142,13 +142,12 @@ class Home extends React.Component {
                             </div>
                             <p className="author">Isaac Newton</p>
                         </div>
-
                     </div>
                 </div>
-            </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            </React.Fragment>
         )
     }
 }
-
 
 export default Home

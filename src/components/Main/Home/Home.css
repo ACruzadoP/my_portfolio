@@ -1,84 +1,89 @@
 
 .carousel-container{
+  width: 50%;
   margin: auto;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 8%;
+  margin-top: 14%;
   margin-bottom: 20%;
   color: rgb(65, 61, 61);
   position: relative;
   overflow-x: hidden;
 }
-
 .carousel-slide{
   display: flex;
 }
-
 .quote{
   display: grid;
   grid-template-rows: auto auto;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
 }
-
 .saying{
   grid-row: 1/2;
   display: grid;
   grid-template-columns: auto 1fr;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-
 .comillas{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 25px;
-  margin-right: 40%;
-  margin-left: 40%;
-  font-size: 25px;
-  color: rgb(122, 117, 117);
+  margin-right: 15px;
+  font-size: 30px;
+  color: rgb(94, 86, 86);
 }
-
 .refran{
-  display: flex;
-  align-items: center;
+  margin-top: 15px;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 40px;
-  flex-wrap: wrap;
-  margin-top: 5px;
 }
-
 .author{
   grid-row: 2/3;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  margin-top: 5%;
-  margin-right: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 25px;
-  margin-bottom: 5px;
 }
-
-
 #prevBtn{
   position: absolute;
-  top: 50%;
+  top: 30%;
   z-index: 10;
-  left: 5%;
+  left: 0%;
   font-size: 30px;
-  color: white;
+  color: rgb(221, 207, 207);
   opacity: 0.7;
   cursor: pointer;
 }
-
 #nextBtn{
   position: absolute;
-  top: 50%;
+  top: 30%;
   z-index: 10;
-  right: 5%;
+  right: 0%;
   font-size: 30px;
-  color: white;
+  color: rgb(221, 207, 207);
   opacity: 0.7;
   cursor: pointer;
+}
+@media screen and (max-width:1450px) {
+  .carousel-container{
+    width: 65%;
+  }
+}
+@media screen and (max-width:1150px) {
+  .carousel-container{
+    width: 75%;
+  }
+}
+@media screen and (max-width:700px) {
+  .carousel-container{
+    width: 90%;
+  }
+  .saying{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+.toggle_increase_top_margin{
+  margin-top: 60%;
 }

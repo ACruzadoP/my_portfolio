@@ -2,67 +2,56 @@
     {
         "id": "1",
         "url": "/img/c.png",
-        "alt": "c",
-        "cn": "techimg"
+        "alt": "c"
     },
     {
         "id": "2",
         "url": "/img/csharp.png",
-        "alt": "csharp",
-        "cn": "techimg"
+        "alt": "csharp"
     },
     {
         "id": "3",
         "url": "/img/vb.png",
-        "alt": "vb",
-        "cn": "techimg"
+        "alt": "vb"
     },
     {
         "id": "4",
         "url": "/img/java.png",
-        "alt": "java",
-        "cn": "techimg"
+        "alt": "java"
     },
     {
         "id": "5",
         "url": "/img/l2net.png",
-        "alt": "l2net",
-        "cn": "techimg2"
+        "alt": "l2net"
     },
     {
         "id": "6",
         "url": "/img/js.png",
-        "alt": "js",
-        "cn": "techimg"
+        "alt": "js"
     },
     {
         "id": "7",
         "url": "/img/react.png",
-        "alt": "react",
-        "cn": "techimg"
+        "alt": "react"
     },
     {
         "id": "8",
         "url": "/img/git.png",
-        "alt": "git",
-        "cn": "techimg"
+        "alt": "git"
     },
     {
         "id": "9",
         "url": "/img/html.png",
-        "alt": "html",
-        "cn": "techimg"
+        "alt": "html"
     },
     {
         "id": "10",
         "url": "/img/css.png",
-        "alt": "css",
-        "cn": "techimg"
+        "alt": "css"
     },
     {
         "id": "11",
         "url": "/img/sass.png",
-        "alt": "sass",
-        "cn": "techimg"
+        "alt": "sass"
     }
 ]

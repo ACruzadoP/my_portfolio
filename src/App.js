@@ -1,14 +1,10 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import Navbar from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
-
 import Home from "./components/Main/Home/Home";
 import Works from "./components/Main/Portfolio/Works";
 import About from "./components/Main/About/About";
-
 import './App.css';
 
 class App extends React.Component {

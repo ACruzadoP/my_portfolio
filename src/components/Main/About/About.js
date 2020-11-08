@@ -1,7 +1,16 @@
 import React from "react"
 import './About.css';
+import '../../Header/Navbar.css'
 
+var linkAbout;
 class About extends React.Component {
+    componentDidMount(){
+        linkAbout = document.getElementsByClassName("linkabout");
+        linkAbout[0].classList.toggle("toggle_about");
+    }
+    componentWillUnmount(){
+        linkAbout[0].classList.toggle("toggle_about");
+    }
     render() {
         return (
             <React.Fragment>
@@ -10,22 +19,20 @@ class About extends React.Component {
                         <img src="/img/acp.png" alt="me"></img>
                         <div className="abouttext">
                             <p>
-                                Hello there! My name is Alberto and technically, I am a Technician in Computer Applications Development.
+                                Hello there! My name is Alberto and I love spending time developing once in a while. A few years ago, I studied to become a Technician in Computer Applications Development.
                             </p><br />
                             <p>
-                                &nbsp;The reason why I said "technically" is that I have never considered myself a true developer - mainly because I have never officially worked as such but also, because every time I have talked to a profesional developer, I have realized how little I know. I have had all sorts of jobs to be honest, but never as a developer. Don't worry, I will stop saying "developer" right now.
+                                &nbsp;I have never considered myself a true developer - mainly because I have never officially worked as such but also, because every time I have talked to a profesional developer, I have realized how little I know. I have worked doing so many other things, but never as a developer.
                             </p><br />
                             <p>
                                 &nbsp;I enjoy every time I manage to develop a piece of software, so far with the only purpose of having fun, but that's all. With that said, feel free to check out my little projects.
                             </p><br />
                             <p>
-                                &nbsp;I trully hope you enjoy 'em all! =)
+                                &nbsp;I trully hope you enjoy 'em all! <span role="img" aria-labelledby="Cross Fingers">🤞🏼</span>
                             </p>
                         </div>
                     </div>
-                    <p>
-                        <br/><br/><br/><br/><br/><br/>
-                    </p>
+                    <br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             </React.Fragment>
         )

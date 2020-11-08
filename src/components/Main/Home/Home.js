@@ -3,7 +3,7 @@ import "./Home.css"
 import '../../Header/Navbar.css'
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
-var height = window.height();
+var height = window.height;
 var carouselContainer;
 var carouselSlide;
 var carouselImages;
@@ -25,7 +25,7 @@ function nextBtn() {
 
 
 const resizeListener = async () => {
-    if (window.height() === height){
+    if (window.height === height){
         carouselContainer.style.opacity = 0;
         await delay(1500);
         window.location.reload();

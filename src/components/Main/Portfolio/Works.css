@@ -123,17 +123,10 @@
         border-bottom-right-radius: 0px;
     }
 }
-@media screen and (max-width:365px) {
-    .gridbox2{
-        display: none;
-    }
-}
-@media screen and (max-width:280px) {
-    .info1 {
-        font-size: 15px;
-    }
-    .info2 {
-        font-size: 10px;
+@media screen and (max-width:700px) {
+    .portfoliomask{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 .toggle_gridbox {

@@ -21,11 +21,29 @@ function nextBtn() {
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 };
+
+
 const resizeListener = async () => {
     carouselContainer.style.opacity = 0;
     await delay(1500);
     window.location.reload();
+    
 };
+/*
+const scrollListener = async () => {
+    console.log("scroll!");
+    carouselContainer.style.opacity = 0;
+    await delay(1500);
+    window.location.reload();
+    
+};
+*/
+
+function scrollListener () {
+    console.log("scroll!");
+}
+
+
 class Home extends React.Component {
 
     componentDidMount() {
@@ -47,6 +65,7 @@ class Home extends React.Component {
             }
         });
         window.addEventListener("resize", resizeListener);
+        window.addEventListener("scroll", scrollListener);
         linkHome = document.getElementsByClassName("linkhome");
         linkHome[0].classList.toggle("toggle_home");
 
@@ -60,6 +79,7 @@ class Home extends React.Component {
     componentWillUnmount() {
         
         window.removeEventListener("resize", resizeListener);
+        window.removeEventListener("scroll", scrollListener);
         linkHome[0].classList.toggle("toggle_home");
 
     }

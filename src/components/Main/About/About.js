@@ -4,11 +4,11 @@ import '../../Header/Navbar.css'
 
 var linkAbout;
 class About extends React.Component {
-    componentDidMount(){
+    componentDidMount() {
         linkAbout = document.getElementsByClassName("linkabout");
         linkAbout[0].classList.toggle("toggle_about");
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
         linkAbout[0].classList.toggle("toggle_about");
     }
     render() {
@@ -32,7 +32,7 @@ class About extends React.Component {
                             </p>
                         </div>
                     </div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </React.Fragment>
         )

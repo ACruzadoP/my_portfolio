@@ -51,6 +51,11 @@
     },
     {
         "id": "11",
+        "url": "/img/redux.png",
+        "alt": "redux"
+    },
+    {
+        "id": "12",
         "url": "/img/sass.png",
         "alt": "sass"
     }

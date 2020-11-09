@@ -5,7 +5,7 @@ import '../../Header/Navbar.css'
 
 var linkWorks;
 class Works extends React.Component {
-    componentDidMount(){
+    componentDidMount() {
         linkWorks = document.getElementsByClassName("linkworks");
         linkWorks[0].classList.toggle("toggle_works");
     }
@@ -13,11 +13,11 @@ class Works extends React.Component {
         linkWorks[0].classList.toggle("toggle_works");
     }
     render() {
-        const phases = infoPF.map(item => <Phasebox key={item.id} phase={item}/>)
-        return(
+        const phases = infoPF.map(item => <Phasebox key={item.id} phase={item} />)
+        return (
             <React.Fragment>
                 {phases}
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </React.Fragment>
         )
     }

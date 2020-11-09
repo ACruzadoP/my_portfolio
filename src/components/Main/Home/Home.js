@@ -11,31 +11,25 @@ var counter = 1;
 var linkHome;
 var size;
 function prevBtn() {
-    if(counter <= 0) return;
+    if (counter <= 0) return;
     carouselSlide.style.transition = "transform 0.6s ease-in-out";
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 };
 function nextBtn() {
-    if(counter>=carouselImages.length-1) return;
+    if (counter >= carouselImages.length - 1) return;
     carouselSlide.style.transition = "transform 0.6s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 };
-
-
 const resizeListener = async () => {
-    if (window.innerHeight === height){
+    if (window.innerHeight === height) {
         carouselContainer.style.opacity = 0;
         await delay(1500);
         window.location.reload();
     }
 };
-
-
-
 class Home extends React.Component {
-
     componentDidMount() {
         carouselContainer = document.getElementById("crc");
         carouselSlide = document.getElementById("cr");
@@ -43,33 +37,29 @@ class Home extends React.Component {
         size = carouselImages[0].clientWidth;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
         carouselSlide.addEventListener('transitionend', () => {
-            if(carouselImages[counter].id === 'lastClone'){
+            if (carouselImages[counter].id === 'lastClone') {
                 carouselSlide.style.transition = "none";
-                counter = carouselImages.length-2;
+                counter = carouselImages.length - 2;
                 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
             }
-            if(carouselImages[counter].id === 'firstClone'){
+            if (carouselImages[counter].id === 'firstClone') {
                 carouselSlide.style.transition = "none";
-                counter = carouselImages.length-counter;
+                counter = carouselImages.length - counter;
                 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
             }
         });
         window.addEventListener("resize", resizeListener);
         linkHome = document.getElementsByClassName("linkhome");
         linkHome[0].classList.toggle("toggle_home");
-
         let nav = document.getElementById('special-nav');
         let ht = window.getComputedStyle(nav, null).getPropertyValue("background");
-        
-        if (ht === 'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box'){
+        if (ht === 'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box') {
             carouselContainer.classList.toggle("toggle_increase_top_margin");
-        } 
+        }
     }
     componentWillUnmount() {
-        
         window.removeEventListener("resize", resizeListener);
         linkHome[0].classList.toggle("toggle_home");
-
     }
     render() {
         return (
@@ -152,7 +142,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </React.Fragment>
         )
     }

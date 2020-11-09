@@ -5,7 +5,6 @@ import '../Main/Home/Home'
 
 var sp_nav;
 var carousel;
-
 class Navbar extends React.Component {
     render() {
         function burgerlistener() {
@@ -21,20 +20,18 @@ class Navbar extends React.Component {
             })
             var sp_bur = document.getElementById("special-burger");
             sp_bur.classList.toggle("toggle_burger");
-
             carousel = document.getElementById("crc");
-            if(carousel != null){
+            if (carousel != null) {
                 carousel.classList.toggle("toggle_increase_top_margin");
-            } 
+            }
         }
-
         return (
             <React.Fragment>
                 <nav>
-                    <div style={{gridArea: "hfirst"}}>
-                        <img className="slogo" src="/img/logo.png" alt="logo" style={{width: "60%"}}/>
+                    <div style={{ gridArea: "hfirst" }}>
+                        <img className="slogo" src="/img/logo.png" alt="logo" style={{ width: "60%" }} />
                     </div>
-                    <div style={{gridArea: "hsecond"}}>
+                    <div style={{ gridArea: "hsecond" }}>
                         <ul className="nav-links" id="special-nav">
                             <li className="linkhome"><Link to="/"><span>HOME</span></Link></li>
                             <li className="linkworks"><Link to="/works"><span>WORKS</span></Link></li>

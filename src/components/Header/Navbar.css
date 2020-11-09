@@ -10,24 +10,29 @@ nav {
     font-size: 22px;
     align-items: center;
 }
+
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 100%;
     list-style: none;
 }
+
 .nav-links a {
     text-decoration: none;
     color: rgb(24, 22, 22);
 }
+
 .nav-links a:hover {
     text-decoration-line: underline;
     color: rgb(88, 114, 32);
 }
+
 .burger {
     display: none;
     cursor: pointer;
 }
+
 .burger div {
     width: 25px;
     height: 3px;
@@ -35,11 +40,13 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+
 @media screen and (max-width:1250px) {
     .slogo {
         width: 80%;
     }
 }
+
 @media screen and (max-width:900px) {
     nav {
         grid-template-columns: 1fr 10%;
@@ -67,12 +74,14 @@ nav {
         display: block;
     }
 }
+
 @media screen and (max-height:500px) {
     .nav-links {
         height: 40%;
         top: 30vh;
     }
 }
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -83,25 +92,32 @@ nav {
         transform: translateX(0px);
     }
 }
+
 .toggle_nav {
     transform: translateX(-10%);
     background-color: white;
 }
+
 .toggle_burger .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle_burger .line2 {
     opacity: 0;
 }
+
 .toggle_burger .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
 .toggle_about {
     text-decoration-line: underline;
 }
+
 .toggle_works {
     text-decoration-line: underline;
 }
+
 .toggle_home {
     text-decoration-line: underline;
 }

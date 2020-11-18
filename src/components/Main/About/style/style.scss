@@ -8,15 +8,15 @@
     letter-spacing: 0.6px;
     color: rgb(65, 61, 61);
     border-radius: 15px;
-}
 
-.aboutmask img {
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    width: 25%;
+    img {
+        float: left;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        width: 25%;
+    }
 }
 
 .abouttext {
@@ -27,11 +27,11 @@
 }
 
 @media screen and (max-width:1400px) {
-    .aboutmask img {
-        width: 35%;
-    }
     .aboutmask {
         font-size: 30px;
+        img {
+            width: 35%;
+        }
     }
 }
 

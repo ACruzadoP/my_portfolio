@@ -1,6 +1,6 @@
 import React from "react"
-import "./Home.css"
-import '../../Header/Navbar.css'
+import "./style/style.css"
+import '../../Header/style/style.css'
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 var height = window.innerHeight;

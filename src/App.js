@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import Home from "./components/Main/Home/Home";
 import Works from "./components/Main/Portfolio/Works";
 import About from "./components/Main/About/About";
-import './App.css';
+import './style/style.css';
 
 class App extends React.Component {
   render() {

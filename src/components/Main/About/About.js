@@ -1,6 +1,6 @@
 import React from "react"
-import './About.css';
-import '../../Header/Navbar.css'
+import './style/style.css';
+import '../../Header/style/style.css'
 
 var linkAbout;
 class About extends React.Component {

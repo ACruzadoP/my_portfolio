@@ -1,0 +1,79 @@
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 150px;
+}
+
+.footercontainer {
+  background: #24292e;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 10% 40% 10% 20%;
+      grid-template-columns: 20% 10% 40% 10% 20%;
+  -ms-grid-rows: 10% 1fr 1fr 10%;
+      grid-template-rows: 10% 1fr 1fr 10%;
+      grid-template-areas: ". . . . ." ". ffirst . . ." ". . . fsecond ." ". . . . .";
+}
+
+.footercontainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+}
+
+.footercontainer i {
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+.footercontainer i:hover {
+  color: #587220;
+}
+
+.footercontainer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  .footercontainer {
+    -ms-grid-columns: 18% 1fr 40% 1fr 18%;
+        grid-template-columns: 18% 1fr 40% 1fr 18%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footercontainer {
+    -ms-grid-columns: 16% 1fr 32% 1fr 16%;
+        grid-template-columns: 16% 1fr 32% 1fr 16%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footercontainer {
+    -ms-grid-columns: 15% 1fr 20% 1fr 15%;
+        grid-template-columns: 15% 1fr 20% 1fr 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footercontainer {
+    -ms-grid-columns: 10% 1fr 15% 1fr 10%;
+        grid-template-columns: 10% 1fr 15% 1fr 10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

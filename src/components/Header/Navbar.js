@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './style/style.css';
 import '../Main/Home/Home'
 
 var sp_nav;

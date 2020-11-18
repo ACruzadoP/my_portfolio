@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F8B195), to(#455954));
+  background-image: linear-gradient(#F8B195, #455954);
+  overflow-x: hidden;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

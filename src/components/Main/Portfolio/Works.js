@@ -1,7 +1,7 @@
 import React from "react"
 import infoPF from "./infoWorks.json"
 import Phasebox from "./XPhase"
-import '../../Header/Navbar.css'
+import '../../Header/style/style.css'
 
 var linkWorks;
 class Works extends React.Component {

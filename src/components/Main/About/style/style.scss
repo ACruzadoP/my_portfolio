@@ -22,21 +22,21 @@
 //Desktops, large screens
 @media screen and (max-width:1200px) {
     .aboutmask {
-        font-size: 30px;
+        font-size: 32px;
     }
 }
 
 //Small screens, laptops
 @media screen and (max-width:1024px) {
     .aboutmask {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
 //iPads, Tablets
 @media screen and (max-width:768px) {
     .aboutmask {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -44,6 +44,9 @@
 @media screen and (max-width:480px) {
     .aboutmask {
         font-size: 20px;
+        img {
+            width: 100%;
+        }
     }
 }
 

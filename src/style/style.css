@@ -8,14 +8,12 @@
 .head {
   min-height: 100vh;
   padding-bottom: 50px;
-  overflow-x: hidden;
 }
 
 .content {
   padding-top: 50px;
   padding-left: 18%;
   padding-right: 18%;
-  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +21,10 @@ body {
   background-image: linear-gradient(#F8B195, #455954);
   overflow-x: hidden;
   position: relative;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,13 +1,16 @@
 .carousel-container {
-    width: 50%;
+    width: 70%;
     margin: auto;
     margin-top: 14%;
-    margin-bottom: 20%;
+
+    font-family: 'PT Sans Narrow', sans-serif;
     color: rgb(65, 61, 61);
+
+
     position: relative;
     overflow-x: hidden;
 }
-
+ 
 .carousel-slide {
     display: flex;
 }
@@ -29,25 +32,23 @@
 }
   
 .comillas {
-    margin-right: 15px;
-    font-size: 30px;
+    margin-right: 5px;
+    font-size: 21px;
     color: rgb(94, 86, 86);
 }
 
 .refran {
     margin-top: 15px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
+    letter-spacing: 0.5px;
 }
 
 .author {
     grid-row: 2/3;
     display: flex;
     flex-direction: row-reverse;
-    margin-left: 7%;
-    margin-right: 7%;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 25px;
+    margin-right: 9%;
+    font-size: 22px;
 }
 
 #prevBtn {
@@ -72,30 +73,95 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:1450px) {
+
+
+//Desktops, large screens
+@media screen and (max-width:1200px) {
     .carousel-container {
-        width: 65%;
+        width: 80%;
+        margin-top: 20%;
+    }
+
+    .comillas {
+        font-size: 19px;
+    }
+    
+    .refran {
+        font-size: 32px;
+    }
+    
+    .author {
+        font-size: 26px;
     }
 }
 
-@media screen and (max-width:1150px) {
-    .carousel-container {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width:700px) {
+//Small screens, laptops
+@media screen and (max-width:1024px) {
     .carousel-container {
         width: 90%;
+        margin-top: 28%;
     }
+
     .saying {
-        margin-left: 8%;
-        margin-right: 8%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
+
+    .comillas {
+        font-size: 16px;
+    }
+    
     .refran {
+        font-size: 29px;
+    }
+    
+    .author {
+        font-size: 22px;
+    }
+}
+
+//iPads, Tablets
+@media screen and (max-width:768px) {
+    .carousel-container {
+        width: 100%;
+        margin-top: 35%;
+    }
+
+    .saying {
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+
+    .comillas {
+        font-size: 13px;
+    }
+    
+    .refran {
+        font-size: 26px;
+    }
+    
+    .author {
         font-size: 20px;
     }
 }
+
+//Mobile devices
+@media screen and (max-width:480px) {
+    .comillas {
+        font-size: 10px;
+    }
+    
+    .refran {
+        font-size: 23px;
+    }
+    
+    .author {
+        font-size: 16px;
+    }
+}
+
+
+
 
 .toggle_increase_top_margin {
     margin-top: 60%;

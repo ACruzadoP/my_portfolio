@@ -1,8 +1,8 @@
 .carousel-container {
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-top: 14%;
-  margin-bottom: 20%;
+  font-family: 'PT Sans Narrow', sans-serif;
   color: #413d3d;
   position: relative;
   overflow-x: hidden;
@@ -41,15 +41,15 @@
 }
 
 .comillas {
-  margin-right: 15px;
-  font-size: 30px;
+  margin-right: 5px;
+  font-size: 21px;
   color: #5e5656;
 }
 
 .refran {
   margin-top: 15px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
+  letter-spacing: 0.5px;
 }
 
 .author {
@@ -63,10 +63,8 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-left: 7%;
-  margin-right: 7%;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 25px;
+  margin-right: 9%;
+  font-size: 22px;
 }
 
 #prevBtn {
@@ -91,28 +89,71 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1200px) {
   .carousel-container {
-    width: 65%;
+    width: 80%;
+    margin-top: 20%;
   }
-}
-
-@media screen and (max-width: 1150px) {
-  .carousel-container {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .carousel-container {
-    width: 90%;
-  }
-  .saying {
-    margin-left: 8%;
-    margin-right: 8%;
+  .comillas {
+    font-size: 19px;
   }
   .refran {
+    font-size: 32px;
+  }
+  .author {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-container {
+    width: 90%;
+    margin-top: 28%;
+  }
+  .saying {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .comillas {
+    font-size: 16px;
+  }
+  .refran {
+    font-size: 29px;
+  }
+  .author {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    margin-top: 35%;
+  }
+  .saying {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .comillas {
+    font-size: 13px;
+  }
+  .refran {
+    font-size: 26px;
+  }
+  .author {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comillas {
+    font-size: 10px;
+  }
+  .refran {
+    font-size: 23px;
+  }
+  .author {
+    font-size: 16px;
   }
 }
 

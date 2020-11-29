@@ -1,7 +1,7 @@
 import React from "react"
 import "./style/style.css"
 import '../../Header/style/style.css'
-
+ 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 var height = window.innerHeight;
 var carouselContainer;
@@ -65,8 +65,13 @@ class Home extends React.Component {
         return (
             <React.Fragment>
                 <div className="carousel-container" id="crc">
-                    <i className="fas fa-arrow-left" id="prevBtn" onClick={prevBtn}></i>
-                    <i className="fas fa-arrow-right" id="nextBtn" onClick={nextBtn}></i>
+                    <div className="spotbuttonleft">
+                        <i className="fas fa-arrow-left" id="prevBtn" onClick={prevBtn}></i>
+                    </div>
+                    <div className="spotbuttonright">
+                        <i className="fas fa-arrow-right" id="nextBtn" onClick={nextBtn}></i>
+                    </div>
+                    
                     <div className="carousel-slide" id="cr">
                         <div className="quote" id="lastClone">
                             <div className="saying">

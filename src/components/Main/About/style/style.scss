@@ -2,7 +2,7 @@
 
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
 
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 35px;
@@ -23,6 +23,7 @@
 @media screen and (max-width:1200px) {
     .aboutmask {
         font-size: 32px;
+        letter-spacing: 0.5px;
         img {
             width: 35%;
         }
@@ -33,6 +34,7 @@
 @media screen and (max-width:1024px) {
     .aboutmask {
         font-size: 28px;
+        letter-spacing: 0.4px;
         img {
             width: 40%;
         }
@@ -43,6 +45,7 @@
 @media screen and (max-width:768px) {
     .aboutmask {
         font-size: 23px;
+        letter-spacing: 0.3px;
         img {
             width: 45%;
         }
@@ -53,7 +56,7 @@
 @media screen and (max-width:480px) {
     .aboutmask {
         font-size: 20px;
-        letter-spacing: 0.3px;
+        letter-spacing: 0.2px;
         img {
             width: 100%;
         }

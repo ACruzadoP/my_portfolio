@@ -2,7 +2,7 @@ import React from "react"
 import infoPF from "./infoWorks.json"
 import Phasebox from "./XPhase"
 import '../../Header/style/style.css'
-
+ 
 var linkWorks;
 class Works extends React.Component {
     componentDidMount() {

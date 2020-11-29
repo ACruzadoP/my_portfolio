@@ -1,7 +1,7 @@
 import React from "react"
 import imgAll from "./infoImgs.json"
 import './style/style.css'
-
+ 
 function XPhase(props) {
     var imgs = imgAll.map(img => <li key={img.id}><img src={img.url} alt={img.alt} /></li>);
     var imgsP1 = [imgs[0], imgs[1], imgs[2], imgs[3]];

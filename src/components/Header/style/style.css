@@ -24,6 +24,7 @@ nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+  z-index: 20;
 }
 
 nav ul a {

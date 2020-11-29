@@ -51,11 +51,13 @@ class Home extends React.Component {
         window.addEventListener("resize", resizeListener);
         linkHome = document.getElementsByClassName("linkhome");
         linkHome[0].classList.toggle("toggle_home");
-        let nav = document.getElementById('special-nav');
+
+
+        /*let nav = document.getElementById('special-nav');
         let ht = window.getComputedStyle(nav, null).getPropertyValue("background");
         if (ht === 'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box') {
             carouselContainer.classList.toggle("toggle_increase_top_margin");
-        }
+        }*/
     }
     componentWillUnmount() {
         window.removeEventListener("resize", resizeListener);
@@ -65,12 +67,8 @@ class Home extends React.Component {
         return (
             <React.Fragment>
                 <div className="carousel-container" id="crc">
-                    <div className="spotbuttonleft">
-                        <i className="fas fa-arrow-left" id="prevBtn" onClick={prevBtn}></i>
-                    </div>
-                    <div className="spotbuttonright">
-                        <i className="fas fa-arrow-right" id="nextBtn" onClick={nextBtn}></i>
-                    </div>
+                    <i className="fas fa-arrow-left" id="prevBtn" onClick={prevBtn}></i>
+                    <i className="fas fa-arrow-right" id="nextBtn" onClick={nextBtn}></i>
                     
                     <div className="carousel-slide" id="cr">
                         <div className="quote" id="lastClone">

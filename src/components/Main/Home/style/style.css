@@ -146,9 +146,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .comillas {
-    font-size: 10px;
-  }
   .refran {
     font-size: 23px;
   }

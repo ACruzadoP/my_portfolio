@@ -83,7 +83,7 @@ nav {
 
         ul {
             position: absolute;
-            top: 12vh;
+            top: 13vh;
             right: 35px;
 
             border-radius: 15px;
@@ -111,6 +111,11 @@ nav {
 @media screen and (max-width:480px) {
     nav {
         grid-template-columns: 9% 1fr 10% 9%;
+
+        ul {
+            top: 20vh;
+            right: 15px;
+        }
 
         img {
             width: 180px;

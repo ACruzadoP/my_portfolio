@@ -51,13 +51,6 @@ class Home extends React.Component {
         window.addEventListener("resize", resizeListener);
         linkHome = document.getElementsByClassName("linkhome");
         linkHome[0].classList.toggle("toggle_home");
-
-
-        /*let nav = document.getElementById('special-nav');
-        let ht = window.getComputedStyle(nav, null).getPropertyValue("background");
-        if (ht === 'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box') {
-            carouselContainer.classList.toggle("toggle_increase_top_margin");
-        }*/
     }
     componentWillUnmount() {
         window.removeEventListener("resize", resizeListener);

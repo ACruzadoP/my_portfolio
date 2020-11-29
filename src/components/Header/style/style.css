@@ -83,7 +83,7 @@ nav ul a:hover {
   }
   nav ul {
     position: absolute;
-    top: 12vh;
+    top: 13vh;
     right: 35px;
     border-radius: 15px;
     width: 120px;
@@ -114,6 +114,10 @@ nav ul a:hover {
   nav {
     -ms-grid-columns: 9% 1fr 10% 9%;
         grid-template-columns: 9% 1fr 10% 9%;
+  }
+  nav ul {
+    top: 20vh;
+    right: 15px;
   }
   nav img {
     width: 180px;

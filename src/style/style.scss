@@ -1,28 +1,24 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 .head {
     min-height: 100vh;
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .content {
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
     padding-left: 18%;
     padding-right: 18%;
 }
 
 body {
     background-image: linear-gradient(#F8B195, #455954);
-    width: 100%;
-    position: relative;
-}
-
-html {
     overflow-x: hidden;
+    position: relative;
 }
 
 //Desktops, large screens

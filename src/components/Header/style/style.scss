@@ -83,9 +83,10 @@ nav {
 
         ul {
             position: absolute;
-            top: 13vh;
+            top: 17vh;
             right: 35px;
 
+            display: none;
             border-radius: 15px;
 
             width: 120px;
@@ -138,6 +139,7 @@ nav {
 .toggle_nav {
     transform: translateX(-10%);
     background-color: white;
+    display: block;
 }
 
 .toggle_burger .line1 {

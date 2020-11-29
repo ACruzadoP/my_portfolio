@@ -19,23 +19,33 @@
   .aboutmask {
     font-size: 32px;
   }
+  .aboutmask img {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .aboutmask {
     font-size: 28px;
   }
+  .aboutmask img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .aboutmask {
-    font-size: 24px;
+    font-size: 23px;
+  }
+  .aboutmask img {
+    width: 45%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .aboutmask {
     font-size: 20px;
+    letter-spacing: 0.3px;
   }
   .aboutmask img {
     width: 100%;

@@ -3,7 +3,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .head {
@@ -20,6 +19,7 @@
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F8B195), to(#455954));
   background-image: linear-gradient(#F8B195, #455954);
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -48,6 +48,9 @@ body {
   .content {
     padding-left: 7%;
     padding-right: 7%;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */

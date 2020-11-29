@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 .head {
@@ -18,6 +17,7 @@
 
 body {
     background-image: linear-gradient(#F8B195, #455954);
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -50,5 +50,8 @@ body {
     .content {
         padding-left: 7%;
         padding-right: 7%;
+    }
+    body {
+        overflow-x: hidden;
     }
 }

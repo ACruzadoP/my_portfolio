@@ -19,6 +19,7 @@
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F8B195), to(#455954));
   background-image: linear-gradient(#F8B195, #455954);
+  width: 100%;
   position: relative;
 }
 

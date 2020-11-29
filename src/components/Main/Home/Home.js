@@ -27,6 +27,8 @@ const resizeListener = async () => {
         carouselContainer.style.opacity = 0;
         await delay(1500);
         window.location.reload();
+    } else {
+        height = window.innerHeight;
     }
 };
 class Home extends React.Component {

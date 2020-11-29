@@ -1,7 +1,7 @@
 import React from "react"
 import './style/style.css';
 import '../../Header/style/style.css'
-
+ 
 var linkAbout;
 class About extends React.Component {
     componentDidMount() {
@@ -17,7 +17,7 @@ class About extends React.Component {
                 <div>
                     <div className="aboutmask">
                         <img src="/img/acp.png" alt="me"></img>
-                        <div className="abouttext">
+                        <div>
                             <p>
                                 Hello there! My name is Alberto and I love spending time developing once in a while. A few years ago, I studied to become a Technician in Computer Applications Development.
                             </p><br />
@@ -32,11 +32,10 @@ class About extends React.Component {
                             </p>
                         </div>
                     </div>
-                    <br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </React.Fragment>
         )
     }
 }
 
-export default About
+export default About 

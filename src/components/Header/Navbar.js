@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import './style/style.css';
 import '../Main/Home/Home'
-
+ 
 var sp_nav;
 var carousel;
 class Navbar extends React.Component {
@@ -29,7 +29,7 @@ class Navbar extends React.Component {
             <React.Fragment>
                 <nav>
                     <div style={{ gridArea: "hfirst" }}>
-                        <img className="slogo" src="/img/logo.png" alt="logo" style={{ width: "60%" }} />
+                        <img src="/img/logo.png" alt="logo" />
                     </div>
                     <div style={{ gridArea: "hsecond" }}>
                         <ul className="nav-links" id="special-nav">

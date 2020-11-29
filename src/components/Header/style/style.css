@@ -1,36 +1,37 @@
 nav {
-  margin-left: 19%;
-  margin-right: 19%;
-  min-height: 15vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "hfirst hsecond";
+  -ms-grid-columns: 20% 1fr 1fr 20%;
+      grid-template-columns: 20% 1fr 1fr 20%;
+      grid-template-areas: ". hfirst hsecond .";
   font-family: 'Staatliches', cursive;
   letter-spacing: 2px;
   font-size: 22px;
+  margin-top: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.nav-links {
+nav img {
+  width: 350px;
+}
+
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
   list-style: none;
 }
 
-.nav-links a {
+nav ul a {
   text-decoration: none;
-  color: #181616;
+  color: #6b5757;
 }
 
-.nav-links a:hover {
+nav ul a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #587220;
@@ -44,36 +45,48 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: #6b5757;
   margin: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1250px) {
-  .slogo {
-    width: 80%;
+@media screen and (max-width: 1200px) {
+  nav {
+    -ms-grid-columns: 18% 1fr 1fr 18%;
+        grid-template-columns: 18% 1fr 1fr 18%;
+    margin-top: 35px;
+  }
+  nav img {
+    width: 270px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   nav {
-    -ms-grid-columns: 1fr 10%;
-        grid-template-columns: 1fr 10%;
+    -ms-grid-columns: 15% 1fr 1fr 15%;
+        grid-template-columns: 15% 1fr 1fr 15%;
   }
-  .slogo {
-    width: 65%;
+  nav img {
+    width: 230px;
   }
-  .nav-links {
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    -ms-grid-columns: 12% 1fr 10% 12%;
+        grid-template-columns: 12% 1fr 10% 12%;
+  }
+  nav img {
+    width: 190px;
+  }
+  nav ul {
     position: absolute;
-    top: 20vh;
-    right: 0px;
+    top: 12vh;
+    right: 35px;
     border-radius: 15px;
-    width: 28%;
-    height: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 120px;
+    height: 115px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -88,7 +101,7 @@ nav {
     transition: transform 0.5s ease-out;
     transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   }
-  .nav-links li {
+  nav ul li {
     opacity: 0;
   }
   .burger {
@@ -96,10 +109,13 @@ nav {
   }
 }
 
-@media screen and (max-height: 500px) {
-  .nav-links {
-    height: 40%;
-    top: 30vh;
+@media screen and (max-width: 480px) {
+  nav {
+    -ms-grid-columns: 9% 1fr 1fr 9%;
+        grid-template-columns: 9% 1fr 1fr 9%;
+  }
+  nav img {
+    width: 180px;
   }
 }
 

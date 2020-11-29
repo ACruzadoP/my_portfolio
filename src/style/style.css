@@ -5,10 +5,49 @@
           box-sizing: border-box;
 }
 
+.head {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.content {
+  padding-top: 50px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F8B195), to(#455954));
   background-image: linear-gradient(#F8B195, #455954);
   overflow-x: hidden;
   position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

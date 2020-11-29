@@ -17,7 +17,6 @@ class Works extends React.Component {
         return (
             <React.Fragment>
                 {phases}
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </React.Fragment>
         )
     }

@@ -142,7 +142,6 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </React.Fragment>
         )
     }

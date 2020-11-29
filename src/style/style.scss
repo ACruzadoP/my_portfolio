@@ -4,8 +4,51 @@
     box-sizing: border-box;
 }
 
+.head {
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.content {
+    padding-top: 50px;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
 body {
     background-image: linear-gradient(#F8B195, #455954);
     overflow-x: hidden;
     position: relative;
+}
+
+//Desktops, large screens
+@media screen and (max-width:1200px) {
+    .content {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+}
+
+//Small screens, laptops
+@media screen and (max-width:1024px) {
+    .content {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
+//iPads, Tablets
+@media screen and (max-width:768px) {
+    .content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+//Mobile devices
+@media screen and (max-width:480px) {
+    .content {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
 }

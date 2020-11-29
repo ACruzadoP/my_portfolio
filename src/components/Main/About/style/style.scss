@@ -1,53 +1,49 @@
 .aboutmask {
-    margin-left: 19%;
-    margin-right: 19%;
-    margin-top: 5%;
+
+    padding: 20px;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
-    font-size: 35px;
+
     font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 35px;
     letter-spacing: 0.6px;
     color: rgb(65, 61, 61);
-    border-radius: 15px;
-
+    
     img {
         float: left;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 20px;
-        margin-bottom: 5px;
         width: 25%;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 }
+ 
 
-.abouttext {
-    margin-top: 100px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-@media screen and (max-width:1400px) {
+//Desktops, large screens
+@media screen and (max-width:1200px) {
     .aboutmask {
         font-size: 30px;
-        img {
-            width: 35%;
-        }
     }
 }
 
-@media screen and (max-width:950px) {
-    .aboutmask img {
-        width: 90%;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (max-width:600px) {
+//Small screens, laptops
+@media screen and (max-width:1024px) {
     .aboutmask {
-        font-size: 25px;
-        margin-left: 10%;
-        margin-right: 10%;
+        font-size: 30px;
     }
 }
+
+//iPads, Tablets
+@media screen and (max-width:768px) {
+    .aboutmask {
+        font-size: 30px;
+    }
+}
+
+//Mobile devices
+@media screen and (max-width:480px) {
+    .aboutmask {
+        font-size: 20px;
+    }
+}
+

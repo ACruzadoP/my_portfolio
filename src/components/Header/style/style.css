@@ -112,8 +112,8 @@ nav ul a:hover {
 
 @media screen and (max-width: 480px) {
   nav {
-    -ms-grid-columns: 1% 1fr 10% 1%;
-        grid-template-columns: 1% 1fr 10% 1%;
+    -ms-grid-columns: 9% 1fr 10% 9%;
+        grid-template-columns: 9% 1fr 10% 9%;
   }
   nav img {
     width: 180px;

@@ -101,6 +101,7 @@ nav ul a:hover {
     transition: -webkit-transform 0.5s ease-out;
     transition: transform 0.5s ease-out;
     transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+    display: none;
   }
   nav ul li {
     opacity: 0;

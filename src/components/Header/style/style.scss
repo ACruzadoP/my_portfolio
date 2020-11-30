@@ -101,7 +101,6 @@ nav {
 
             li {
                 opacity: 0;
-                display: none;
             }
         }
     }
@@ -141,6 +140,7 @@ nav {
 .toggle_nav {
     transform: translateX(-10%);
     background-color: white;
+    display: block;
 }
 
 .toggle_burger .line1 {

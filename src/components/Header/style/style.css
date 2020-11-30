@@ -105,7 +105,6 @@ nav ul a:hover {
   }
   nav ul li {
     opacity: 0;
-    display: none;
   }
   .burger {
     display: block;
@@ -156,6 +155,7 @@ nav ul a:hover {
   -webkit-transform: translateX(-10%);
           transform: translateX(-10%);
   background-color: white;
+  display: block;
 }
 
 .toggle_burger .line1 {

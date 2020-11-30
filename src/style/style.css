@@ -20,6 +20,7 @@ body {
   background-image: linear-gradient(#F8B195, #455954);
   overflow-x: hidden;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (max-width: 1200px) {

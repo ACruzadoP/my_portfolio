@@ -94,10 +94,10 @@ nav {
             flex-direction: column;
             align-items: center;
 
-            transform: translateX(100%);
+            //transform: translateX(100%);
             transition: transform 0.5s ease-out;
 
-            display: none;
+            //display: none;
 
             li {
                 opacity: 0;
@@ -138,9 +138,9 @@ nav {
 }
 
 .toggle_nav {
-    transform: translateX(-10%);
+    //transform: translateX(-10%);
     background-color: white;
-    display: block;
+    //display: block;
 }
 
 .toggle_burger .line1 {

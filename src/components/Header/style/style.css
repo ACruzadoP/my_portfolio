@@ -95,10 +95,6 @@ nav ul a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: -webkit-transform 0.5s ease-out;
-    transition: -webkit-transform 0.5s ease-out;
-    transition: transform 0.5s ease-out;
-    transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   }
   nav ul li {
     opacity: 0;

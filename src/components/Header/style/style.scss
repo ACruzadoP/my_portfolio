@@ -82,6 +82,8 @@ nav {
         }
 
         ul {
+            z-index: 0;
+
             position: absolute;
             top: 17vh;
             right: 35px;
@@ -96,6 +98,7 @@ nav {
 
             li {
                 opacity: 0;
+                pointer-events: none;
             }
         }
     }
@@ -134,6 +137,11 @@ nav {
 
 .toggle_nav {
     background-color: white;
+    z-index: 20;
+}
+
+.toggle_nav_li {
+    pointer-events: auto;
 }
 
 .toggle_burger .line1 {
@@ -148,6 +156,10 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.toggle_home {
+    text-decoration-line: underline;
+}
+
 .toggle_about {
     text-decoration-line: underline;
 }
@@ -156,6 +168,3 @@ nav {
     text-decoration-line: underline;
 }
 
-.toggle_home {
-    text-decoration-line: underline;
-}

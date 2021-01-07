@@ -82,6 +82,7 @@ nav ul a:hover {
     width: 190px;
   }
   nav ul {
+    z-index: 0;
     position: absolute;
     top: 17vh;
     right: 35px;
@@ -98,6 +99,7 @@ nav ul a:hover {
   }
   nav ul li {
     opacity: 0;
+    pointer-events: none;
   }
   .burger {
     display: block;
@@ -146,6 +148,11 @@ nav ul a:hover {
 
 .toggle_nav {
   background-color: white;
+  z-index: 20;
+}
+
+.toggle_nav_li {
+  pointer-events: auto;
 }
 
 .toggle_burger .line1 {
@@ -162,17 +169,17 @@ nav ul a:hover {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.toggle_home {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .toggle_about {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .toggle_works {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.toggle_home {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }

@@ -10,6 +10,14 @@ class Navbar extends React.Component {
             sp_nav = document.getElementById("special-nav");
             sp_nav.classList.toggle("toggle_nav");
             var navLinks = document.querySelectorAll('.nav-links li');
+
+            var l1 = document.getElementById("link1");
+            l1.classList.toggle("toggle_nav_li");
+            var l2 = document.getElementById("link2");
+            l2.classList.toggle("toggle_nav_li");
+            var l3 = document.getElementById("link3");
+            l3.classList.toggle("toggle_nav_li");
+            
             navLinks.forEach((link, index) => {
                 if (link.style.animation) {
                     link.style.animation = '';
@@ -17,6 +25,7 @@ class Navbar extends React.Component {
                     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
                 }
             })
+            
             var sp_bur = document.getElementById("special-burger");
             sp_bur.classList.toggle("toggle_burger");
         }
@@ -28,9 +37,9 @@ class Navbar extends React.Component {
                     </div>
                     <div style={{ gridArea: "hsecond" }}>
                         <ul className="nav-links" id="special-nav">
-                            <li className="linkhome"><Link to="/"><span>HOME</span></Link></li>
-                            <li className="linkworks"><Link to="/works"><span>WORKS</span></Link></li>
-                            <li className="linkabout"><Link to="/about"><span>ABOUT</span></Link></li>
+                            <li className="linkhome" id="link1"><Link to="/"><span>HOME</span></Link></li>
+                            <li className="linkworks" id="link2"><Link to="/works"><span>WORKS</span></Link></li>
+                            <li className="linkabout" id="link3"><Link to="/about"><span>ABOUT</span></Link></li>
                         </ul>
                         <div className="burger" onClick={burgerlistener} id="special-burger">
                             <div className="line1"></div>

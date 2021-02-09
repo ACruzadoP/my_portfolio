@@ -9,7 +9,10 @@ class Footer extends React.Component {
                 <footer>
                     <div className="footercontainer">
                         <div style={{ gridArea: "ffirst" }}><Social /></div>
-                        <span style={{ gridArea: "fsecond" }}>
+                        <div className="langholder" style={{ gridArea: "flangbox" }}>
+                            
+                        </div>
+                        <span style={{ gridArea: "fsecond" }}> 
                             <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
                                 <img alt="Creative Commons License" style={{ borderWidth: 0 }} src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
                             </a>

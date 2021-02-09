@@ -14,7 +14,7 @@ footer {
       grid-template-columns: 20% 10% 40% 10% 20%;
   -ms-grid-rows: 10% 1fr 1fr 10%;
       grid-template-rows: 10% 1fr 1fr 10%;
-      grid-template-areas: ". . . . ." ". ffirst . . ." ". . . fsecond ." ". . . . .";
+      grid-template-areas: ". . . . ." ". ffirst . flangbox ." ". . . fsecond ." ". . . . .";
 }
 
 .footercontainer ul {
@@ -34,6 +34,10 @@ footer {
 
 .footercontainer i:hover {
   color: #587220;
+}
+
+.footercontainer .langholder {
+  background-color: aqua;
 }
 
 .footercontainer span {

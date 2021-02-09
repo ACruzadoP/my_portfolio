@@ -1,4 +1,6 @@
 import React from "react"
+import infoQT from "./zquotes.json"
+import XQte from "./XQuote"
 import "./style/style.css"
 import '../../Header/style/style.css'
  
@@ -59,6 +61,7 @@ class Home extends React.Component {
         linkHome[0].classList.toggle("toggle_home");
     }
     render() {
+        const quotes = infoQT.map(item => <XQte key={item.id} quote={item} />)
         return (
             <React.Fragment>
                 <div className="carousel-container" id="crc">
@@ -66,79 +69,31 @@ class Home extends React.Component {
                     <i className="fas fa-arrow-right" id="nextBtn" onClick={nextBtn}></i>
                     
                     <div className="carousel-slide" id="cr">
+                        
                         <div className="quote" id="lastClone">
                             <div className="saying">
                                 <div className="comillas">
                                     <i className="fas fa-quote-right"></i>
                                 </div>
-                                <p className="refran">It's not that I'm so smart, it's just that I stay with problems longer.</p>
+                                <p className="refran">{infoQT[infoQT.length-1].refran}</p>
                             </div>
-                            <p className="author">Albert Einstein</p>
+                            <p className="author">{infoQT[infoQT.length-1].author}</p>
                         </div>
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">If I have seen further, it is by standing on the shoulders of giants.</p>
-                            </div>
-                            <p className="author">Isaac Newton</p>
-                        </div>
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">Be not afraid of going slowly. Be afraid only of standing still.</p>
-                            </div>
-                            <p className="author">Chinese proverb</p>
-                        </div>
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">Earning happiness means doing good and working, not speculating and being lazy. Laziness may look inviting, but only work gives you true satisfaction.</p>
-                            </div>
-                            <p className="author">Anne Frank</p>
-                        </div>
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">Things may come to those who wait, but only the things left by those who hustle.</p>
-                            </div>
-                            <p className="author">Abraham Lincoln</p>
-                        </div>
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">Before you diagnose yourself with depression or low self-esteem, first make sure you are not, in fact, surrounded by assholes.</p>
-                            </div>
-                            <p className="author">Sigmund Freud</p>
-                        </div>
-                        <div className="quote">
-                            <div className="saying">
-                                <div className="comillas">
-                                    <i className="fas fa-quote-right"></i>
-                                </div>
-                                <p className="refran">It's not that I'm so smart, it's just that I stay with problems longer.</p>
-                            </div>
-                            <p className="author">Albert Einstein</p>
-                        </div>
+
+                        {quotes}
+
                         <div className="quote" id="firstClone">
                             <div className="saying">
                                 <div className="comillas">
                                     <i className="fas fa-quote-right"></i>
                                 </div>
-                                <p className="refran">If I have seen further, it is by standing on the shoulders of giants.</p>
+                                <p className="refran">{infoQT[0].refran}</p>
                             </div>
-                            <p className="author">Isaac Newton</p>
+                            <p className="author">{infoQT[0].author}</p>
                         </div>
+
                     </div>
+                        
                 </div>
             </React.Fragment>
         )
